@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\Auth;
 class MonthlySummaryChart extends ChartWidget
 {
     protected ?string $heading = 'Resumo do Mês Atual';
-    protected ?string $maxHeight = '300px';
-    protected int | string | array $columnSpan = 'full';
+    protected ?string $maxHeight = '275px';
 
     protected function getData(): array
     {
