@@ -28,6 +28,10 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->renderHook(
+                'panels::auth.login.form.after',
+                fn() => view('filament.custom.login-buttons')
+            )
             ->colors([
                 'primary' => Color::Emerald,
             ])
