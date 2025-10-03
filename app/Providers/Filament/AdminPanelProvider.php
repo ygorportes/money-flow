@@ -32,6 +32,8 @@ class AdminPanelProvider extends PanelProvider
                 'panels::auth.login.form.after',
                 fn() => view('filament.custom.login-buttons')
             )
+            ->brandName('Money Flow')
+            ->favicon(asset('favicon.svg'))
             ->colors([
                 'primary' => Color::Emerald,
             ])
